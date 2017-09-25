@@ -9,7 +9,7 @@ namespace Ahmed_Job.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(WebApplication1.Models.ApplicationDbContext context)
