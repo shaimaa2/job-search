@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-default ">
+        <div Class="container">
+            <div class="navbar navbar-header">
+                <button class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">
+                    <img src="#" />
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-home"></i>
+                            الرئيسيه
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-folder-open"></i>
+                            العروض
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                            عن الموقع
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            اتصل بنا
+                        </a>
+                    </li>
+                </ul>
+                <!--Partial login-->
+                @Html.Partial("_login")
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+
+            @RenderBody()
+
+        </div>
+    </div>
+
+
+
+
+
+    <!--Footer   navbar navbar-fixed-bottom -->
+    <footer class="myfooter navbar navbar-fixed-bottom">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                        من نحن؟
+
+                    </h3>
+                </div>
+                <div class="col-md-4">
+                    <h3>
+                        <i class="glyphicon glyphicon-globe"></i>
+                        روابط هامه
+                    </h3>
+                    <ul>
+                        <li><a href="#">وظائف القطاع العام</a></li>
+                        <li><a href="#">وظائف القطاع الخاص</a></li>
+                        <li><a href="#">وظائف خارج البلاد</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>
+                        <i class="glyphicon glyphicon-envelope"></i>
+                        تواصل  معنا
+
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">صفحتنا على الفيسبوك</a>
+                        </li>
+                        <li>
+                            <a href="#">تابعنا على تويتر</a>
+                        </li>
+                        <li>
+                            <a href="#">ارسل لنا رساله</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="subfooter">
+            <span>جميع الحقوق محفوظه 2017</span>
+        </div>
+
+
+    </footer>
+
+</body>
+
+    <script src="~/Scripts/jquery-3.2.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+
+
+</html>
